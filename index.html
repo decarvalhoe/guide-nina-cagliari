@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nina à Cagliari — petit guide en musique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16324A;        /* bleu profond méditerranéen */
+  --sea:#2B8FB3;        /* azur de la baie */
+  --flamingo:#EF7D95;   /* rose flamant de Molentargius */
+  --sand:#E9DFC8;       /* sable du Poetto */
+  --paper:#F5FAFC;      /* blanc lumineux du sud */
+  --soft:#DCEEF5;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  font-family:'Karla',sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:17px;
+}
+.wrap{max-width:680px;margin:0 auto;padding:0 22px}
+header{
+  background:linear-gradient(175deg,var(--ink) 0%,#1D4A66 70%,var(--sea) 130%);
+  color:var(--paper);
+  padding:56px 0 44px;
+  position:relative;
+  overflow:hidden;
+}
+header::after{
+  content:"";
+  position:absolute;left:0;right:0;bottom:-2px;height:26px;
+  background:var(--paper);
+  clip-path:ellipse(60% 100% at 50% 100%);
+}
+.eyebrow{
+  font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--flamingo);font-weight:700;margin-bottom:14px;
+}
+h1{
+  font-family:'Marcellus',serif;
+  font-size:clamp(34px,8vw,48px);
+  font-weight:400;line-height:1.12;
+  margin-bottom:16px;
+}
+.lead{color:#CBE4EF;max-width:46ch;font-size:18px}
+.lead strong{color:#fff;font-weight:700}
+.staff-box{margin:34px 0 6px}
+.staff-box svg{width:100%;height:auto;display:block}
+.staff-caption{font-size:13px;color:#9FC6D8;margin-top:10px;letter-spacing:.04em}
+section{padding:44px 0 8px}
+.mvt{
+  font-family:'Marcellus',serif;
+  color:var(--sea);
+  font-size:15px;letter-spacing:.18em;text-transform:uppercase;
+  display:flex;align-items:center;gap:12px;margin-bottom:8px;
+}
+.mvt::after{content:"";flex:1;height:1px;background:var(--soft)}
+h2{
+  font-family:'Marcellus',serif;font-weight:400;
+  font-size:clamp(25px,5.5vw,31px);
+  margin-bottom:14px;
+}
+section > .wrap > p{margin-bottom:14px;max-width:60ch}
+.place{
+  background:#fff;
+  border:1px solid var(--soft);
+  border-left:4px solid var(--sea);
+  border-radius:12px;
+  padding:18px 20px;
+  margin:16px 0;
+  box-shadow:0 2px 10px rgba(22,50,74,.05);
+}
+.place.pink{border-left-color:var(--flamingo)}
+.place h3{
+  font-family:'Marcellus',serif;font-weight:400;font-size:20px;
+  margin-bottom:2px;
+}
+.place .meta{
+  font-size:13px;color:var(--sea);font-weight:700;
+  letter-spacing:.05em;margin-bottom:8px;
+}
+.place p{font-size:16px;margin-bottom:8px}
+.place a{
+  color:var(--sea);font-weight:700;text-decoration:none;font-size:14px;
+  border-bottom:1.5px solid var(--soft);
+}
+.place a:hover,.place a:focus-visible{color:var(--flamingo);border-color:var(--flamingo)}
+a:focus-visible{outline:2px solid var(--flamingo);outline-offset:3px;border-radius:3px}
+.note{
+  background:var(--soft);
+  border-radius:12px;
+  padding:18px 20px;
+  margin:18px 0;
+  font-size:16px;
+}
+.note strong{color:var(--ink)}
+.note.rose{background:#FBE9ED}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:16px}
+td{padding:9px 6px;border-bottom:1px solid var(--soft);vertical-align:top}
+td:first-child{font-style:italic;color:var(--sea);font-weight:500;width:52%}
+footer{
+  margin-top:52px;
+  background:var(--ink);color:#BBD8E6;
+  padding:40px 0 48px;text-align:center;font-size:15px;
+}
+footer .sig{
+  font-family:'Marcellus',serif;color:#fff;font-size:22px;margin-bottom:8px;
+}
+footer .heart{color:var(--flamingo)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Cagliari · Sardaigne · ton stage de violon</p>
+    <h1>Nina, la ville t'attend<br>entre deux répétitions</h1>
+    <p class="lead">Un petit guide rien que pour toi. Tout ici est <strong>à pied ou à un bus près</strong>, dans une ville douce, sûre et pleine de gens gentils. Tu peux y aller à ton rythme — comme une partition&nbsp;: on commence piano, on finit forte.</p>
+    <div class="staff-box" aria-hidden="true">
+      <svg viewBox="0 0 640 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trajet hôtel–conservatoire dessiné comme une portée musicale">
+        <g stroke="#9FC6D8" stroke-width="1">
+          <line x1="20" y1="45" x2="620" y2="45"/>
+          <line x1="20" y1="60" x2="620" y2="60"/>
+          <line x1="20" y1="75" x2="620" y2="75"/>
+          <line x1="20" y1="90" x2="620" y2="90"/>
+          <line x1="20" y1="105" x2="620" y2="105"/>
+        </g>
+        <text x="30" y="98" font-family="Marcellus,serif" font-size="58" fill="#EF7D95">&#119070;</text>
+        <g>
+          <ellipse cx="150" cy="90" rx="9" ry="7" fill="#F5FAFC"/>
+          <line x1="159" y1="90" x2="159" y2="52" stroke="#F5FAFC" stroke-width="2.5"/>
+          <text x="150" y="132" text-anchor="middle" font-family="Karla,sans-serif" font-size="13" fill="#CBE4EF">Ton hôtel</text>
+        </g>
+        <g>
+          <ellipse cx="310" cy="75" rx="9" ry="7" fill="#F5FAFC"/>
+          <line x1="319" y1="75" x2="319" y2="38" stroke="#F5FAFC" stroke-width="2.5"/>
+          <text x="310" y="132" text-anchor="middle" font-family="Karla,sans-serif" font-size="13" fill="#CBE4EF">Parco della Musica</text>
+        </g>
+        <g>
+          <ellipse cx="480" cy="60" rx="9" ry="7" fill="#EF7D95"/>
+          <line x1="489" y1="60" x2="489" y2="24" stroke="#EF7D95" stroke-width="2.5"/>
+          <text x="480" y="132" text-anchor="middle" font-family="Karla,sans-serif" font-size="13" fill="#F8C9D3">Conservatoire</text>
+        </g>
+        <path d="M150 82 Q 315 30 480 52" fill="none" stroke="#EF7D95" stroke-width="1.5" stroke-dasharray="1 6" stroke-linecap="round"/>
+      </svg>
+      <p class="staff-caption">Ton trajet de tous les jours : ~15 minutes à pied, et il passe par un parc dédié à la musique. Ça ne s'invente pas.</p>
+    </div>
+  </div>
+</header>
+<section id="prelude">
+  <div class="wrap">
+    <p class="mvt">Prélude</p>
+    <h2>Tes repères</h2>
+    <p>Deux adresses à connaître par cœur, et entre les deux, un quartier tranquille et résidentiel que tu vas vite apprivoiser.</p>
+    <div class="place">
+      <h3>Ton hôtel — Ulivi e Palme</h3>
+      <p class="meta">Via Pietro Bembo 25 · ton point de départ</p>
+      <p>Quartier calme, à l'est du centre. Garde une carte de visite de l'hôtel dans ta poche ou une photo de l'adresse sur ton téléphone : si jamais tu es perdue, tu la montres à n'importe qui (ou à un taxi) et le tour est joué.</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Residence+Ulivi+e+Palme+Via+Pietro+Bembo+25+Cagliari" target="_blank" rel="noopener">Voir sur la carte →</a>
+    </div>
+    <div class="place pink">
+      <h3>Le Conservatoire « G. P. da Palestrina »</h3>
+      <p class="meta">Piazza Ennio Porrino 1 · ~15 min à pied de l'hôtel</p>
+      <p>C'est là que tu vas jouer. Le chemin est simple : tu descends la Via Bembo, tu traverses le Parco della Musica, et tu y es. Fais le trajet une première fois tranquillement (ou avec quelqu'un du stage) — après, ce sera ton itinéraire réflexe.</p>
+      <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Via+Pietro+Bembo+25+Cagliari&amp;destination=Conservatorio+di+Musica+Cagliari+Piazza+Ennio+Porrino&amp;travelmode=walking" target="_blank" rel="noopener">Voir l'itinéraire à pied →</a>
+    </div>
+    <div class="note">
+      <strong>À savoir tout de suite :</strong> Cagliari est une ville universitaire paisible, une des plus sûres d'Italie. Les gens sont chaleureux, patients, et beaucoup comprennent un peu le français ou l'espagnol. Tu as le droit de ne pas parler italien — un sourire et <em>« scusi »</em> ouvrent toutes les portes.
+    </div>
+  </div>
+</section>
+<section id="andante">
+  <div class="wrap">
+    <p class="mvt">Andante</p>
+    <h2>Entre deux répétitions</h2>
+    <p>Tout ça se trouve <em>sur ou juste à côté</em> de ton trajet hôtel–conservatoire. Parfait pour une pause d'une heure, sans aucune organisation.</p>
+    <div class="place">
+      <h3>Parco della Musica</h3>
+      <p class="meta">Sur ton chemin · gratuit</p>
+      <p>Un parc moderne avec un plan d'eau, des bancs à l'ombre et le grand Teatro Lirico juste à côté. L'endroit idéal pour réviser une partition, souffler après une répétition, ou juste regarder les oiseaux. Tu y passeras tous les jours de toute façon !</p>
+    </div>
+    <div class="place">
+      <h3>Borromini Cafè</h3>
+      <p class="meta">Via Dante 129 · à 2 min du conservatoire · fermé le dimanche</p>
+      <p>Le petit café-pâtisserie parfait avant ou après les cours : cappuccino + cornetto (le croissant italien), personnel adorable, prix tout doux. Le rituel du matin des musiciens du quartier.</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Borromini+Cafe+Via+Dante+129+Cagliari" target="_blank" rel="noopener">Voir sur la carte →</a>
+    </div>
+    <div class="place">
+      <h3>Gelateria Ice Stop</h3>
+      <p class="meta">Via Dante 65 · à 7 min du conservatoire</p>
+      <p>Glace artisanale géniale — teste le <em>semifreddo nocciola</em> ou le citron d'Amalfi avec crumble. Récompense officielle des répétitions réussies (et des moins réussies aussi).</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Gelateria+Ice+Stop+Via+Dante+65+Cagliari" target="_blank" rel="noopener">Voir sur la carte →</a>
+    </div>
+    <div class="place">
+      <h3>Mercato di San Benedetto</h3>
+      <p class="meta">À 10 min du conservatoire · le matin, fermé le dimanche</p>
+      <p>Un grand marché couvert, coloré et vivant : fruits, fromages, pâtisseries sardes. Personne ne te mettra la pression — tu peux juste te promener, regarder, et repartir avec des pêches pour trois fois rien. Une vraie tranche de vie italienne, en toute sécurité.</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Mercato+San+Benedetto+Cagliari" target="_blank" rel="noopener">Voir sur la carte →</a>
+    </div>
+    <div class="place">
+      <h3>Giardini Pubblici &amp; Galleria d'Arte</h3>
+      <p class="meta">À 15 min du conservatoire · jardin gratuit</p>
+      <p>Un jardin ancien plein d'ombre avec, au fond, un petit musée d'art clair et tranquille (fermé le lundi, ~6 €). Le combo parfait pour un après-midi calme quand il fait très chaud.</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Giardini+Pubblici+Cagliari" target="_blank" rel="noopener">Voir sur la carte →</a>
+    </div>
+    <div class="place pink">
+      <h3>Pizzanoa</h3>
+      <p class="meta">Via Sant'Anania 15 · à 10 min de ton hôtel · le soir, fermé le lundi</p>
+      <p>Une des meilleures pizzas de la ville, à deux pas de ton hôtel, avec une équipe souriante et des prix doux (~12 € pizza + boisson). Idéal pour y aller avec les autres du stage un soir.</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Pizzanoa+Via+Sant+Anania+15+Cagliari" target="_blank" rel="noopener">Voir sur la carte →</a>
+    </div>
+  </div>
+</section>
+<section id="allegretto">
+  <div class="wrap">
+    <p class="mvt">Allegretto</p>
+    <h2>Un peu plus loin, en douceur</h2>
+    <div class="place pink">
+      <h3>Les flamants roses de Molentargius</h3>
+      <p class="meta">À 25 min à pied de l'hôtel · gratuit · matin ou fin de journée</p>
+      <p>Oui : de <strong>vrais flamants roses sauvages</strong>, en pleine ville. L'entrée principale (Via La Palma) est celle où on les voit le mieux, près du centre des visiteurs. Promenade plate et facile. Prends de l'eau et une casquette — et ton téléphone pour la photo qu'on attend tous.</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Parco+Naturale+Molentargius+Saline+Via+La+Palma+Cagliari" target="_blank" rel="noopener">Voir sur la carte →</a>
+    </div>
+    <div class="place">
+      <h3>Le centre historique : Bastione &amp; Castello</h3>
+      <p class="meta">Bus 8 depuis San Benedetto, ou ~30 min à pied · gratuit</p>
+      <p>Le Bastione di Saint Remy est une grande terrasse blanche avec LA vue sur toute la ville et la mer (il y a même un ascenseur). Juste au-dessus, le vieux quartier du Castello : ruelles piétonnes, cathédrale, petites boutiques. Impossible de vraiment s'y perdre — tout redescend vers le port. Vas-y en fin d'après-midi : le coucher de soleil y est magique.</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Bastione+di+Saint+Remy+Cagliari" target="_blank" rel="noopener">Voir sur la carte →</a>
+    </div>
+    <div class="place">
+      <h3>Piazza Yenne &amp; la glace chez Kremet</h3>
+      <p class="meta">En bas du Castello · ouvert tard</p>
+      <p>La place la plus vivante et conviviale du centre. La gelateria Kremet y fait une des meilleures glaces de Sardaigne (pistache ⭐). En face du port, sous les arcades de la Via Roma, il y a aussi PeterPan, l'autre institution. Tu as le droit de comparer scientifiquement les deux.</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Kremet+Gelateria+Piazza+Yenne+Cagliari" target="_blank" rel="noopener">Voir sur la carte →</a>
+    </div>
+  </div>
+</section>
+<section id="crescendo">
+  <div class="wrap">
+    <p class="mvt">Crescendo</p>
+    <h2>Quand tu te sens d'attaque</h2>
+    <div class="place">
+      <h3>La plage du Poetto</h3>
+      <p class="meta">Bus PF ou PQ depuis le centre · toute la journée</p>
+      <p>Huit kilomètres de sable clair, une eau peu profonde, des kiosques à glaces et à sandwichs tout du long. C'est LA plage des Cagliaritains — familiale, animée, jamais inquiétante. C'est sûrement là que tu iras avec les autres du stage. Le vent peut souffler : accroche bien ton chapeau.</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Spiaggia+Poetto+Cagliari" target="_blank" rel="noopener">Voir sur la carte →</a>
+    </div>
+    <div class="place">
+      <h3>La Sella del Diavolo</h3>
+      <p class="meta">Petite rando facile ~40 min de montée · le matin · à plusieurs</p>
+      <p>Le promontoire qui domine la baie, avec une vue à couper le souffle. Le sentier part de Calamosca et il est balisé par des marques vertes au sol. À faire avec d'autres stagiaires, le matin avant la chaleur, avec de l'eau et de bonnes chaussures. La photo d'en haut, c'est celle qui rendra tout le monde jaloux.</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Sella+del+Diavolo+Calamosca+Cagliari" target="_blank" rel="noopener">Voir sur la carte →</a>
+    </div>
+  </div>
+</section>
+<section id="coda">
+  <div class="wrap">
+    <p class="mvt">Coda</p>
+    <h2>La boîte à outils</h2>
+    <div class="note">
+      <strong>Les bus :</strong> télécharge l'appli <strong>CTM Busfinder</strong> — tu achètes ton ticket directement sur ton téléphone, tu vois les horaires en temps réel, zéro stress de guichet. Un ticket se valide en montant.
+    </div>
+    <div class="note">
+      <strong>La chaleur d'août :</strong> bouteille d'eau toujours sur toi, casquette, crème solaire, et sorties plutôt le matin ou après 17h. Entre 13h et 16h, l'Italie entière fait la sieste — fais pareil, ou répète ton violon au frais.
+    </div>
+    <div class="note rose">
+      <strong>Si quelque chose ne va pas :</strong> le numéro d'urgence européen est le <strong>112</strong> (gratuit, ils parlent anglais). Ton téléphone suisse fonctionne en Italie — vérifie juste ton forfait roaming avec papa. Et à n'importe quel moment, tu peux appeler la maison : ce n'est pas « ne pas y arriver », c'est juste normal.
+    </div>
+    <h2 style="margin-top:34px">Ton italien de poche</h2>
+    <table>
+      <tr><td>Buongiorno / Buonasera</td><td>Bonjour / Bonsoir</td></tr>
+      <tr><td>Per favore · Grazie mille</td><td>S'il vous plaît · Merci beaucoup</td></tr>
+      <tr><td>Scusi, non parlo italiano</td><td>Pardon, je ne parle pas italien</td></tr>
+      <tr><td>Dov'è il conservatorio?</td><td>Où est le conservatoire ?</td></tr>
+      <tr><td>Un cono con due gusti, per favore</td><td>Un cornet deux parfums, s'il vous plaît</td></tr>
+      <tr><td>Quanto costa?</td><td>Combien ça coûte ?</td></tr>
+      <tr><td>Suono il violino</td><td>Je joue du violon (ça, ça fait toujours sourire)</td></tr>
+    </table>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <p class="sig">Buon viaggio, Nina <span class="heart">♥</span></p>
+    <p>Tu n'es pas obligée de tout faire. Une seule belle chose par jour, c'est déjà un voyage réussi.<br>Et chaque soir, il y a quelqu'un à Lausanne qui a hâte d'entendre ce que tu as vu.</p>
+  </div>
+</footer>
+</body>
+</html>
